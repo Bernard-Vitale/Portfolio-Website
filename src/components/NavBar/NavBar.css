@@ -14,7 +14,7 @@
     color: rgb(233, 228, 228);
     margin: 0.8rem 2rem;
     font-size: 1rem;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 .navBarItem:hover{
