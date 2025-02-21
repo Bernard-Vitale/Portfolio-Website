@@ -13,17 +13,11 @@
         transform: rotate(0deg);
     }
     50% {
-        transform: rotate(15deg);
+        transform: rotate(25deg);
     }
     100% {
         transform: rotate(0deg);
     }
-}
-.subcontainer{
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    border: 3px white solid;
-    color: white;
 }
 
 .homeTitleContainer{
@@ -42,6 +36,10 @@
     justify-content: center;
     padding: 10px;
     max-width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 1px white solid;
+    color: white;
 }
 .littleDescription{
     display: flex;
@@ -106,6 +104,9 @@
     display: none;
 }
   
+.resumeLogo{
+    padding:0px ;
+}
 .logoContainer:hover .gif, .logoContainer:hover .resumeLogo {
     display: block;
     box-shadow: 0 0 10px rgba(11, 143, 250); 

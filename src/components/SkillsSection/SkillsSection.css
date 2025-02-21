@@ -1,0 +1,149 @@
+.skillsSectionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skillsTitleContainer h1{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+.skillsListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    gap: 25px;
+    padding: 20px;
+}
+.skillContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(181, 181, 181);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    height: 6em;
+    width: 8rem;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.skillContainer p{
+    margin: 0px;
+    margin-top: 5px;
+}
+.skillContainer:hover{
+    transform: scale(1.1);
+    background-color: #212122;
+}
+.skillLogo {
+  width: 50px;
+  height: 50px;
+}
+.skillLogo path{
+    transition: fill 0.3s ease;
+}
+
+.skillContainer:hover .jQuerySVG path {
+  fill:  #0769AD;
+}
+
+.skillContainer:hover .jsSVG path {
+    fill: #F0DB4F
+}
+
+.skillContainer:hover .reactSVG path{
+    fill: #61DBFB;
+}
+
+.skillContainer:hover .nodeSVG path{
+    fill: #68a063;
+}
+
+.redisSides{
+    fill: black;
+}
+
+.skillContainer:hover .redisSides{
+    fill: #A41E11;
+}
+
+.skillContainer:hover .redisTops{
+    fill: #D82C20;
+}
+
+.skillContainer:hover .redisShadow{
+    fill: #7A0C00;
+}
+.skillContainer:hover .redisHoles{
+    fill: #ffffff;
+}
+
+.skillContainer:hover .mongoDarkGreen{
+    fill: #3FA037;
+}
+
+.skillContainer:hover .mongoStem{
+    fill: #E8E7D5;
+}
+.skillContainer:hover .mongoLightGreen{
+    fill: #4DB33D;
+}
+.skillContainer:hover .mongoGray{
+    fill: #3F3E42;
+}
+
+.skillContainer:hover .bootOuter{
+    fill: #563d7c;
+}
+
+.skillContainer:hover .bootInner{
+    fill: #ffffff;
+}
+
+.skillContainer:hover .sqlSVG path{
+    fill:#00758F;
+}
+
+.skillContainer:hover .htmlSVG path{
+    fill:#e34c26;
+}
+
+
+.skillContainer:hover .cssOuter{
+    fill: #663399;
+}
+
+.skillContainer:hover .pyBlue{
+    fill: #4584b6;
+}
+
+.skillContainer:hover .pyYellow{
+    fill: #ffde57;
+}
+
+.skillContainer:hover .javaSteam{
+    fill: #e76f00;
+}
+
+.skillContainer:hover .javaCup{
+    fill: #5382a1;
+}
+
+.skillContainer:hover .cppBottom{
+    fill: #00549d;
+}
+
+.skillContainer:hover .cppTop{
+    fill: #0086d4;
+}
+
+.skillContainer:hover .cppRight{
+    fill: #0075c0;
+}
+
+.skillContainer:hover .cppLetter{
+    fill: #ffffff;
+}
