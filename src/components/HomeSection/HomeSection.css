@@ -100,14 +100,14 @@
     display: none;
 }
   
-.logoContainer:hover .static {
+.logoContainer a:hover .static {
     display: none;
 }
   
 .resumeLogo{
     padding:0px ;
 }
-.logoContainer:hover .gif, .logoContainer:hover .resumeLogo {
+.logoContainer a:hover .gif, .logoContainer .resumeLogo:hover {
     display: block;
     box-shadow: 0 0 10px rgba(11, 143, 250); 
 }

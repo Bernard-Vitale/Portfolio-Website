@@ -7,7 +7,7 @@
 .skillsTitleContainer h1{
     color: white;
     font-size: 2rem;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 .skillsListContainer{
     display: flex;

@@ -10,6 +10,7 @@
     border-radius: 30px;
     border: 1px white solid;
     z-index: 10;
+    transition: background-color 0.3s ease;
 }
 .navBarItem{
     color: rgb(233, 228, 228);

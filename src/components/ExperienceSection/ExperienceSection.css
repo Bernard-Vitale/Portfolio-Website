@@ -1,0 +1,80 @@
+.experienceSectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+}
+
+.toggleSwitchContainer {
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: rgb(78, 78, 78);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.toggleSlider {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(103, 103, 103);
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+.expBtn {
+    flex: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    z-index: 1; 
+    transition: color 0.5s ease-in-out;
+}
+
+.active{
+    color: white;
+}
+
+.notActive{
+    color: rgb(138, 138, 138);
+}
+
+.experienceInfoContainer{
+    padding: 20px;
+    overflow: hidden;
+}
+.workExperienceContainer{
+    transition: transform 0.5s ease-in-out;
+}
+
+.specificJobContainer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    flex-direction: column;
+}
+.jobHeader{
+    display: flex;
+    align-items: center;
+}
+.jobHeaderLeft{
+    width: 70%;
+}
+.jobHeaderRight{
+    text-align: right;
+    width: 30%;
+}
+
+.jobDuties{
+    margin-top: 0px;
+    padding-left: 20px;
+}
+
