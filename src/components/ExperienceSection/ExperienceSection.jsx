@@ -30,6 +30,22 @@ const workExp = [
 ];
 
 const educationExp = [
+  {
+    school: 'Stevens Institute of Technology',
+    gpa: '3.75',
+    schoolDates: 'Sept. 2022 - Dec. 2024',
+    degree: 'Bachelor of Science in Computer Science',
+    awards: "Dean's List  (Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024)",
+    location: 'Hoboken, NJ'
+  },
+  {
+    school: 'Brookdale Community College',
+    gpa: '3.88',
+    schoolDates: 'Sept. 2020 - Dec. 2022',
+    degree: 'Majored in Computer Science',
+    awards: "Phi Theta Kappa Honor Society, Dean’s List (Fall 2020, Spring 2021, Fall 2021)",
+    location: 'Lincroft, NJ'
+  }
 
 ];
 
@@ -48,7 +64,7 @@ const ExperienceSection = () => {
         <div className="workExperienceContainer" style={{ transform: isWork ? "translateX(0%)" : "translateX(-110%)" }}>
           {workExp.map((job) => {
             return(
-              <article className="specificJobContainer">
+              <article className="specificExpContainer" key={job.title}>
                 <header className='jobHeader'>
                   <div className="jobHeaderLeft">
                     <h2 className="jobTitle">{job.title}</h2>
@@ -60,14 +76,34 @@ const ExperienceSection = () => {
                   </div>
                 </header>
                 <ul className="jobDuties">
-                  {job.duties.map((duty) => {return (<li>{duty}</li>)})}
+                  {job.duties.map((duty) => {return (<li key={duty}>{duty}</li>)})}
                 </ul>
               </article>
             )
           })}
         </div>
-        <div className="educationExpereinceContainer">
-          
+        <div className="educationExpereinceContainer" style={{ transform: !isWork ? "translateX(-100%)" : "translateX(10%)" }}>
+          {educationExp.map((edu) => {
+            return(
+              <article className='specificExpContainer' key={edu.school}>
+                  <header className="schoolHeader">
+                    <div className='headerTop'>
+                      <h2 className='schoolName'>{edu.school}</h2>
+                      <p className="schoolDates">{edu.schoolDates}</p>
+                    </div>
+                    <div className="headerBottom">
+                      <p className='schoolDegree'>{edu.degree}</p>
+                      <p className="schoolLocation"> {edu.location}</p>
+                    </div>
+                  </header>
+                  <ul className="schoolAwards">
+                    <li><b>GPA:</b> {edu.gpa}</li>
+                    <li>{edu.awards}</li>
+                  </ul>
+
+              </article>
+            )
+          })}
         </div>
       </div>
     </section>
