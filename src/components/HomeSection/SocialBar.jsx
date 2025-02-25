@@ -1,4 +1,5 @@
 import React from "react"
+import myResume from '../../assets/Bernard Vitale Resume.pdf';
 
 const SocialBar = () => {
   return (
@@ -25,7 +26,9 @@ const SocialBar = () => {
           </div>
 
           <div className="logoContainer">
-            <img className="homeLogo resumeLogo" src="/images/Resume-Logo.png" alt="Resume Logo" />
+            <a href={myResume} alt='My Resume' target="_blank">
+              <img className="homeLogo resumeLogo" src="/images/Resume-Logo.png" alt="Resume Logo" />
+            </a>
           </div>
         </div>
   )

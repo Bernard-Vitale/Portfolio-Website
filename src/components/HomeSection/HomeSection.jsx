@@ -2,15 +2,15 @@ import React from "react"
 import "./HomeSection.css"
 import SocialBar from "./SocialBar";
 
-const HomeSection = () => {
+const HomeSection = ({ref}) => {
   return (
-    <section className="homeInfoContainer subcontainer">
+    <section ref={ref} className="homeInfoContainer subcontainer">
       <div className="introContainer">
         <div className="homeTitleContainer">
             <h1>Hey, I'm Bernard<span className="wave-element">👋</span></h1>
             <div className="locationContainer">
               <img className="locationLogo" src="/images/Location-Logo.png" alt="Location Icon" />
-              <p className="locationText">Matawan, New Jersey</p>
+              <p className="locationText">New Jersey, USA</p>
             </div>
           </div>
           <SocialBar />

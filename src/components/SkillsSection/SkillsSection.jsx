@@ -20,11 +20,11 @@ const skillsList = [
 ]
 
 
-const SkillsSection = () => {
+const SkillsSection = ({ref}) => {
     return (
-        <section className="skillsSectionContainer">
+        <section ref={ref} className="skillsSectionContainer">
             <div className="skillsTitleContainer">
-                <h1>My Skillset</h1>
+                <h1 className="sectionHeading">My Skillset</h1>
             </div>
             <div className="skillsListContainer">
                 {skillsList.map((item) => (

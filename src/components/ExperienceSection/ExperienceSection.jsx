@@ -49,61 +49,64 @@ const educationExp = [
 
 ];
 
-const ExperienceSection = () => {
+const ExperienceSection = ({ref}) => {
   const [isWork, setIsWork] = useState(true);
 
 
   return (
-    <section className="experienceSectionContainer">
-      <div className="toggleSwitchContainer">
-      <div className="toggleSlider" style={{ transform: isWork ? "translateX(0%)" : "translateX(100%)" }}></div>
-        <button onClick={() => setIsWork(true)} className={`expBtn workBtn ${isWork ? 'active' : 'notActive'}`}>Work</button>
-        <button onClick={() => setIsWork(false)} className={`expBtn workBtn ${!isWork ? 'active' : 'notActive'}`} >Education</button>
-      </div>
-      <div className="experienceInfoContainer">
-        <div className="workExperienceContainer" style={{ transform: isWork ? "translateX(0%)" : "translateX(-110%)" }}>
-          {workExp.map((job) => {
-            return(
-              <article className="specificExpContainer" key={job.title}>
-                <header className='jobHeader'>
-                  <div className="jobHeaderLeft">
-                    <h2 className="jobTitle">{job.title}</h2>
-                    <p className="companyName">{job.company}</p>
-                  </div>
-                  <div className='jobHeaderRight'>
-                      <p className="jobDates">{job.dates}</p>
-                      <p className="jobLocation">{job.location}</p>
-                  </div>
-                </header>
-                <ul className="jobDuties">
-                  {job.duties.map((duty) => {return (<li key={duty}>{duty}</li>)})}
-                </ul>
-              </article>
-            )
-          })}
+    <section ref={ref} className="experienceSectionOuterContainer">
+      <h1 className='sectionHeading'>Experience</h1>
+      <div className="experienceSectionInnerContainer">
+        <div className="toggleSwitchContainer">
+          <div className="toggleSlider" style={{ transform: isWork ? "translateX(0%)" : "translateX(100%)" }}></div>
+          <button onClick={() => setIsWork(true)} className={`expBtn workBtn ${isWork ? 'active' : 'notActive'}`}>Work</button>
+          <button onClick={() => setIsWork(false)} className={`expBtn workBtn ${!isWork ? 'active' : 'notActive'}`} >Education</button>
         </div>
-        <div className="educationExpereinceContainer" style={{ transform: !isWork ? "translateX(-100%)" : "translateX(10%)" }}>
-          {educationExp.map((edu) => {
-            return(
-              <article className='specificExpContainer' key={edu.school}>
-                  <header className="schoolHeader">
-                    <div className='headerTop'>
-                      <h2 className='schoolName'>{edu.school}</h2>
-                      <p className="schoolDates">{edu.schoolDates}</p>
+        <div className="experienceInfoContainer">
+          <div className="workExperienceContainer" style={{ transform: isWork ? "translateX(0%)" : "translateX(-110%)" }}>
+            {workExp.map((job) => {
+              return(
+                <article className="specificExpContainer" key={job.title}>
+                  <header className='jobHeader'>
+                    <div className="jobHeaderLeft">
+                      <h2 className="jobTitle">{job.title}</h2>
+                      <p className="companyName">{job.company}</p>
                     </div>
-                    <div className="headerBottom">
-                      <p className='schoolDegree'>{edu.degree}</p>
-                      <p className="schoolLocation"> {edu.location}</p>
+                    <div className='jobHeaderRight'>
+                        <p className="jobDates">{job.dates}</p>
+                        <p className="jobLocation">{job.location}</p>
                     </div>
                   </header>
-                  <ul className="schoolAwards">
-                    <li><b>GPA:</b> {edu.gpa}</li>
-                    <li>{edu.awards}</li>
+                  <ul className="jobDuties">
+                    {job.duties.map((duty) => {return (<li key={duty}>{duty}</li>)})}
                   </ul>
+                </article>
+              )
+            })}
+          </div>
+          <div className="educationExpereinceContainer" style={{ transform: !isWork ? "translateX(-100%)" : "translateX(10%)" }}>
+            {educationExp.map((edu) => {
+              return(
+                <article className='specificExpContainer' key={edu.school}>
+                    <header className="schoolHeader">
+                      <div className='headerTop'>
+                        <h2 className='schoolName'>{edu.school}</h2>
+                        <p className="schoolDates">{edu.schoolDates}</p>
+                      </div>
+                      <div className="headerBottom">
+                        <p className='schoolDegree'>{edu.degree}</p>
+                        <p className="schoolLocation"> {edu.location}</p>
+                      </div>
+                    </header>
+                    <ul className="schoolAwards">
+                      <li><b>GPA:</b> {edu.gpa}</li>
+                      <li>{edu.awards}</li>
+                    </ul>
 
-              </article>
-            )
-          })}
+                </article>
+              )
+            })}
+          </div>
         </div>
       </div>
     </section>
