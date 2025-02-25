@@ -6,8 +6,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
-  margin: 0;
+  min-height: 100%;
+  margin: 0px;
 }
 
 .mainContainer {
@@ -16,7 +16,6 @@
   margin-top: 100px;
   max-width: 700px;
   min-width: 10px;
-  padding: 0px;
   gap: 30px;
 }
 
@@ -50,8 +49,4 @@ footer{
 }
 footer a{
   color: white;
-}
-
-*{
-  box-sizing: border-box;
 }

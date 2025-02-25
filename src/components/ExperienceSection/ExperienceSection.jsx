@@ -54,7 +54,7 @@ const ExperienceSection = ({ref}) => {
 
 
   return (
-    <section ref={ref} className="experienceSectionOuterContainer">
+    <section ref={ref} className="experienceSectionOuterContainer subcontainer">
       <h1 className='sectionHeading'>Experience</h1>
       <div className="experienceSectionInnerContainer">
         <div className="toggleSwitchContainer">

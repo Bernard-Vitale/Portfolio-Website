@@ -22,7 +22,7 @@ const skillsList = [
 
 const SkillsSection = ({ref}) => {
     return (
-        <section ref={ref} className="skillsSectionContainer">
+        <section ref={ref} className="skillsSectionContainer subcontainer">
             <div className="skillsTitleContainer">
                 <h1 className="sectionHeading">My Skillset</h1>
             </div>

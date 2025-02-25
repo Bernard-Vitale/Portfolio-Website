@@ -110,7 +110,7 @@
 }
 .logoContainer a:hover .gif, .logoContainer .resumeLogo:hover {
     display: block;
-    box-shadow: 0 0 10px rgba(11, 143, 250); 
+    box-shadow: 0 0 10px rgb(11, 143, 250); 
 }
 
 @media (max-width: 400px) {

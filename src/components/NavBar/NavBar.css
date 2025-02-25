@@ -9,7 +9,7 @@
     max-width: 500px; 
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: rgba(29, 28, 28, 0.9);
     border-radius: 30px;
     border: 1px white solid;
     z-index: 10;
@@ -22,7 +22,7 @@
 /
 }
 .navBarContainer:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(29, 28, 28);
 }
 
 .navBarItem:hover{

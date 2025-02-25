@@ -50,7 +50,7 @@ const ProjectSection = ({ref}) => {
     }
 
     return (
-    <section ref={ref} className="projectSectionContainer" >
+    <section ref={ref} className="projectSectionContainer subcontainer" >
         <h1 className="sectionHeading">Projects</h1>
         <div className="projectCardsContainer">
             {projectList.map((proj) => {

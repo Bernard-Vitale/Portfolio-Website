@@ -32,7 +32,7 @@
 }
 .skillContainer:hover{
     transform: scale(1.1);
-    background-color: #212122;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 .skillLogo {
   width: 40px;

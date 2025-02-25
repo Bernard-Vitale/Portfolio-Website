@@ -24,23 +24,23 @@ function App() {
   const year = new Date().getFullYear();
   
   return (
-    <main>
-    <NavBar scrollToSection={scrollToSection} sections={{ home: homeRef, skills: skillsRef, experience: experienceRef, projects: projectsRef }} />
-    <div className="mainContainer">
-        <HomeSection ref={homeRef} />
-        <SkillsSection ref={skillsRef} />
-        <ProjectSection ref={projectsRef} />
-        <ExperienceSection ref={experienceRef} />
-      </div>
-      <footer>
-        <p>&copy; {year} Bernard Vitale | All Rights Reserved</p>
-        <div className="social-links">
-            <a href="https://github.com/Bernard-Vitale" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/bernard-vitale/" target="_blank">LinkedIn</a>
-            <a href={myResume} alt='My Resume' target="_blank">Resume</a>
+    <main className="mainOuterContainer">
+      <NavBar scrollToSection={scrollToSection} sections={{ home: homeRef, skills: skillsRef, experience: experienceRef, projects: projectsRef }} />
+      <div className="mainContainer">
+          <HomeSection ref={homeRef} />
+          <SkillsSection ref={skillsRef} />
+          <ProjectSection ref={projectsRef} />
+          <ExperienceSection ref={experienceRef} />
         </div>
-        <p>Icons by <a href="https://icons8.com" target="_blank" rel="noopener noreferrer">Icons8</a></p>
-    </footer>
+        <footer className="subcontainer">
+          <p>&copy; {year} Bernard Vitale | All Rights Reserved</p>
+          <div className="social-links">
+              <a href="https://github.com/Bernard-Vitale" target="_blank">GitHub</a>
+              <a href="https://www.linkedin.com/in/bernard-vitale/" target="_blank">LinkedIn</a>
+              <a href={myResume} alt='My Resume' target="_blank">Resume</a>
+          </div>
+          <p>Icons by <a href="https://icons8.com" target="_blank" rel="noopener noreferrer">Icons8</a></p>
+      </footer>
     </main>
   )
 }
