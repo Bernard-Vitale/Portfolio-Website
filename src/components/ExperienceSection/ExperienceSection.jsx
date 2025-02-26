@@ -24,7 +24,8 @@ const workExp = [
           'Ensured seamless adaptability across devices with a mobile-friendly layout.',
           'Implemented a contact form for direct communication with the company.',
           'Continuously addressed bugs and implemented improvements as needed to maintain website functionality.',
-          'Deployed on Vercel.'
+          'Deployed on Vercel.',
+          (<a href='https://thelawnspanj.com/' target='_blank' >View Here</a>)
     ]
   }
 ];

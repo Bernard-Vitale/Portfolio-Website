@@ -1,0 +1,35 @@
+.notFoundContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+.notFoundMessageBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border: 1px white solid;
+    padding: 20px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+#goHomeBtn{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px white solid;
+    transition: transform 0.3s ease-in-out;
+}
+
+#goHomeBtn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(11, 143, 250); 
+}

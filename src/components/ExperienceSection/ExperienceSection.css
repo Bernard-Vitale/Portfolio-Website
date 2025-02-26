@@ -111,6 +111,10 @@ li{
     margin-bottom: 0px;
 }
 
+.jobDuties a{
+    color: white;
+}
+
 
 @media (max-width: 400px) {
     .experienceSectionInnerContainer {
