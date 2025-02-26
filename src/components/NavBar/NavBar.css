@@ -19,7 +19,6 @@
     color: rgb(233, 228, 228);
     font-size: clamp(0.5rem, 0.9rem, 1rem);
     transition: color 0.5s ease;
-/
 }
 .navBarContainer:hover {
     background-color: rgba(29, 28, 28);
