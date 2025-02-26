@@ -40,15 +40,15 @@
     border: 1px white solid;
     color: white;
 }
-.littleDescription{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.littleDescription p{
     text-wrap: wrap;
     min-width: 40%;
     padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    margin: 5px 0px;
 }
+
 
 .homeInfoContainer h1{
     margin-bottom: 0rem;

@@ -16,7 +16,7 @@ const HomeSection = ({ref}) => {
           <SocialBar />
       </div>
       <div className="littleDescription">
-        <p>I am a <b>Software Developer</b> with a passion for developing innovative software. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+        <p>I’m a <b>Software Developer</b> who enjoys building things that work well and make life easier. I like solving problems and writing clean, efficient code. </p>
       </div>
     </section>
   )
