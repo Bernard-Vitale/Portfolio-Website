@@ -36,7 +36,7 @@ const educationExp = [
     gpa: '3.75',
     schoolDates: 'Sept. 2022 - Dec. 2024',
     degree: 'Bachelor of Science in Computer Science',
-    awards: "Dean's List  (Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024)",
+    awards:[ "Dean's List  (Fall 2022, Spring 2023, Fall 2023, Spring 2024, Fall 2024)"],
     location: 'Hoboken, NJ'
   },
   {
@@ -44,7 +44,7 @@ const educationExp = [
     gpa: '3.88',
     schoolDates: 'Sept. 2020 - Dec. 2022',
     degree: 'Majored in Computer Science',
-    awards: "Phi Theta Kappa Honor Society, Dean’s List (Fall 2020, Spring 2021, Fall 2021)",
+    awards: ["Phi Theta Kappa Honor Society", "Dean’s List (Fall 2020, Spring 2021, Fall 2021)"],
     location: 'Lincroft, NJ'
   }
 
@@ -101,7 +101,7 @@ const ExperienceSection = ({ref}) => {
                     </header>
                     <ul className="schoolAwards">
                       <li><b>GPA:</b> {edu.gpa}</li>
-                      <li>{edu.awards}</li>
+                      <li>{edu.awards.map((item, index) => {return(<li key={index}>{item}</li>)})}</li>
                     </ul>
 
                 </article>
