@@ -11,6 +11,13 @@ const projectList = [
         github: 'https://github.com/melissatmaca/cs546_Group4_Project'
     },
     {
+        name: 'Audio Ave',
+        image: '/images/AudioAve.png',
+        description: 'A companion app for Spotify users featuring AI-generated playlists, Spotify stats tracking, and a social playlist-sharing feed.',
+        techStack: ['JavaScript', 'HTML', 'CSS', 'Handlebars', 'Node.js', 'Express.js', 'Git', 'Spotify API'],
+        github: 'https://github.com/melissatmaca/cs546_Group4_Project'
+    },
+    {
         name: 'BiomechVIS',
         image: '/images/BiomechVIS.png',
         description: 'A data visualization tool for the Biomedical Engineering Lab at Stevens, supporting interactive 2D and 3D graph plotting from .mat files.',
