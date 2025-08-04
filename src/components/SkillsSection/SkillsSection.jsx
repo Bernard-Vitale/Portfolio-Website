@@ -24,7 +24,7 @@ const SkillsSection = ({ref}) => {
     return (
         <section ref={ref} className="skillsSectionContainer subcontainer">
             <div className="skillsTitleContainer">
-                <h1 className="sectionHeading">My Skillset</h1>
+                <h1 className="sectionHeading">My Skills</h1>
             </div>
             <div className="skillsListContainer">
                 {skillsList.map((item) => (
