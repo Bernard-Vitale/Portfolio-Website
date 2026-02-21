@@ -94,6 +94,7 @@
 }
 .companyName, .jobLocation{
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .jobDuties, .schoolAwards{
