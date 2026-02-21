@@ -89,6 +89,9 @@
 .jobTitle, .jobDates{
     margin-bottom: 0px;
 }
+.jobTitle{
+    font-size: 1.4rem;
+}
 .companyName, .jobLocation{
     margin-top: 10px;
 }

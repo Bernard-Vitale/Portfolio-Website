@@ -3,6 +3,18 @@ import './ExperienceSection.css';
 
 const workExp = [
   {
+    title: 'Application Development - Professional I',
+    company: 'Fiserv',
+    location: 'Berkeley Heights, NJ',
+    dates: 'Dec. 2025 - Present',
+    duties: [
+        'Develop, maintain, and enhance custom client applications using SQR on the DNA core banking platform',
+        'Translate client business requirements into scalable technical solutions within the DNA ecosystem.',
+        'Design and optimize SQR programs for performance, reliability, and maintainability.',
+        'Write SQL queries and implement data transformations to support custom reporting.'
+    ]
+  },
+  {
     title: 'Web Programming Course Assistant',
     company: 'Stevens Institute of Technology',
     location: 'Hobken, NJ',
