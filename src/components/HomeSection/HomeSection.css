@@ -30,6 +30,7 @@
     padding: 0 10px;
     justify-content: space-between;
 }
+
 .homeInfoContainer{
     display: flex;
     flex-direction: column;
