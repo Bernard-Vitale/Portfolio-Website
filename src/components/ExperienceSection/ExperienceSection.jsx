@@ -8,10 +8,10 @@ const workExp = [
     location: 'Berkeley Heights, NJ',
     dates: 'Dec. 2025 - Present',
     duties: [
-        'Develop, maintain, and enhance custom client applications using SQR on the DNA core banking platform',
-        'Translate client business requirements into scalable technical solutions within the DNA ecosystem.',
-        'Design and optimize SQR programs for performance, reliability, and maintainability.',
-        'Write SQL queries and implement data transformations to support custom reporting.'
+        'Develop and enhance custom applications for the DNA core banking platform to support clients’ business needs.',
+        'Document custom applications to provide clear technical guidance for both internal teams and clients.',
+        'Write and optimize SQR programs with a focus on performance, reliability, and long-term maintainability.',
+        ' Write SQL queries and build data transformations to support custom reporting for financial institution clients.'
     ]
   },
   {
