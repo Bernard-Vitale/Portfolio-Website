@@ -29,8 +29,8 @@ function App() {
       <div className="mainContainer">
           <HomeSection ref={homeRef} />
           <SkillsSection ref={skillsRef} />
-          <ProjectSection ref={projectsRef} />
           <ExperienceSection ref={experienceRef} />
+          <ProjectSection ref={projectsRef} />
         </div>
         <footer className="subcontainer">
           <p>&copy; {year} Bernard Vitale | All Rights Reserved</p>
