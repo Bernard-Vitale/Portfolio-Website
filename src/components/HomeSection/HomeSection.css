@@ -77,7 +77,6 @@
 }
 .locationLogo{
     height: 25px;
-    border-radius: 10px;
 }
 .locationContainer{
     display: flex;
